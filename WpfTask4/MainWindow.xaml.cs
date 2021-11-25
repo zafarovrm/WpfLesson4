@@ -27,10 +27,62 @@ namespace WpfTask4
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            double rateDollar = Convert.ToDouble(rate.Text);
-            double sumDollar = Convert.ToDouble(sum.Text);
+            double rateDollar = Convert.ToDouble(rateD.Text);
+            double sumDollar = Convert.ToDouble(sumD.Text);
             double resDouble = rateDollar * sumDollar;
-            resSum.Text = resDouble.ToString();
+            resSumD.Text = resDouble.ToString();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            double rateEuro = Convert.ToDouble(rateE.Text);
+            double sumEuro = Convert.ToDouble(sumE.Text);
+            double resDoubleEuro = rateEuro * sumEuro;
+            resSumE.Text = resDoubleEuro.ToString();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            double rateHryvnia = Convert.ToDouble(rateH.Text);
+            double sumHryvnia = Convert.ToDouble(sumH.Text);
+            double resDoubleHryvnia = rateHryvnia * sumHryvnia;
+            resSumH.Text = resDoubleHryvnia.ToString();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            double rateArmenianDrama = Convert.ToDouble(rateAD.Text);
+            double sumArmenianDrama = Convert.ToDouble(sumAD.Text);
+            double resDoubleArmenianDrama = rateArmenianDrama * sumArmenianDrama;
+            resSumAD.Text = resDoubleArmenianDrama.ToString();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            double rateInch = Convert.ToDouble(rateI.Text);            
+            double resDoubleInch = rateInch/39.37;
+            resSumI.Text = resDoubleInch.ToString();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            double rateFeet = Convert.ToDouble(rateF.Text);
+            double resDoubleFeet = rateFeet / 3.281;
+            resSumF.Text = resDoubleFeet.ToString();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            double rateMiles = Convert.ToDouble(rateM.Text);
+            double resDoubleMiles = rateMiles / 1609;
+            resSumM.Text = resDoubleMiles.ToString();
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            double rateVerst = Convert.ToDouble(rateV.Text);
+            double resDoubleVerst = rateVerst *1066.8;
+            resSumV.Text = resDoubleVerst.ToString();
         }
     }
 }
